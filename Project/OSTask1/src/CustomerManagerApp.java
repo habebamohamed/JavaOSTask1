@@ -22,15 +22,15 @@ public class CustomerManagerApp {
             action = Console.getString("Enter a command: ");
             System.out.println();
 
-            if (action.equalsIgnoreCase("list")) {
+            if (action.equalsIgnoreCase(1)) {
                 displayAllCustomers();
-            } else if (action.equalsIgnoreCase("add")) {
+            } else if (action.equalsIgnoreCase(2)) {
                 addCustomer();
-            } else if (action.equalsIgnoreCase("del") || action.equalsIgnoreCase("delete")) {
+            } else if (action.equalsIgnoreCase(3) || action.equalsIgnoreCase("delete")) {
                 deleteCustomer();
-            } else if (action.equalsIgnoreCase("help") || action.equalsIgnoreCase("menu")) {
+            } else if (action.equalsIgnoreCase(4) || action.equalsIgnoreCase("menu")) {
                 displayMenu();
-            } else if (action.equalsIgnoreCase("exit")) {
+            } else if (action.equalsIgnoreCase(5)) {
                 System.out.println("Bye.\n");
             } else {
                 System.out.println("Error! Not a valid command.\n");
